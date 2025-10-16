@@ -16,11 +16,12 @@
     "mpris"
   ],
   "modules-center": [
-    "hyprland/window",
     "clock",
+    "hyprland/window",
     "tray"
   ],
   "modules-right": [
+    "network#performance",
     "group/performance"
   ]
 }

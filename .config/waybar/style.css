@@ -3,10 +3,12 @@
 
 * {
     font-family: "JetBrainsMono Nerd Font Propo";
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     padding: 0;
     margin: 0;
+      border-radius: 6px;
+
 }
 
 window#waybar.empty,
@@ -14,6 +16,7 @@ window#waybar,
 window#waybar.empty #window {
     color: @main-fg;
     background-color: alpha(@main-bg, 0.9);
+    border-radius: 0px;
 }
 
 tooltip {
@@ -60,8 +63,9 @@ tooltip label {
     background-color: @hover-bg;
 }
 
-#workspaces button.empty {
-    color: @yellow;
+#workspaces button.active.empty {
+    color: @mantle;
+    background-color: @yellow;
 }
 
 #memory,
@@ -69,14 +73,28 @@ tooltip label {
     padding-left: 1em
 }
 
+#network {
+  padding: 0 10px;
+  color: @mantle;
+  background-color: @flamingo;
+}
+
+#clock {
+  padding: 0 10px;
+  margin-right: 20px;
+  color: @base;
+  background-color: @green;
+}
+
 #wireplumber,
 #battery,
 #idle_inhibitor,
 #language,
-#network,
 #bluetooth,
 #tray {
-    padding-right: 1em 
+  padding-left: 3px;
+    padding-right: 3px;
+    background-color: @mauve;
 }
 
 #custom-launcher {
