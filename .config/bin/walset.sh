@@ -46,7 +46,7 @@ else
       else
         echo -en "$item\n"
       fi
-    done | rofi -dmenu -p "Wallpapers${relative_path:+ ($relative_path)}" -theme "~/.config/rofi/launchers/type-2/style-13.rasi")
+    done | rofi -dmenu -p "Wallpapers${relative_path:+ ($relative_path)}" -theme "~/.config/rofi/launchers/type-2/style-7.rasi")
 
     if [ -n "$selection" ]; then
       if [[ "$selection" == "../ (Go Back)" ]]; then
