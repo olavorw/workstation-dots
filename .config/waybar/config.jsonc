@@ -18,7 +18,8 @@
   "modules-center": [
     "clock",
     "hyprland/window",
-    "tray"
+    "tray",
+    "custom/swaync"
   ],
   "modules-right": [
     "network",

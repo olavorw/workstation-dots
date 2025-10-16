@@ -17,7 +17,7 @@ window#waybar.empty #window {
     color: @main-fg;
     background-color: alpha(@main-bg, 0.9);
     border-radius: 0px;
-}
+  }
 
 tooltip {
   color: @main-fg;
@@ -32,7 +32,17 @@ tooltip label {
 .modules-center,
 .modules-right {
   padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0px;
 }
+
+#custom-swaync {
+  background-color: @yellow;
+  color: @mantle;
+  padding: 0 3px;
+}
+
 #workspaces button.active,
 #taskbar button.active {
     color: @mantle;
