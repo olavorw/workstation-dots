@@ -278,11 +278,11 @@
     "on-click-middle": "nm-connection-editor",
     "on-click-right": "protonvpn-app",
     "format-icons": [
-      "󰤯 ",
-      "󰤟 ",
-      "󰤢 ",
-      "󰤥 ",
-      "󰤨 "
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
     ],
   },
   "network#speedalt": {
@@ -343,11 +343,11 @@
     "format-bluetooth": "{icon} 󰂰 {volume}%",
     "format-muted": "",
     "format-icons": {
-      "headphone": " ",
-      "hands-free": "󱡏 ",
-      "phone": " ",
-      "portable": " ",
-      "car": " ",
+      "headphone": "",
+      "hands-free": "󱡏",
+      "phone": "",
+      "portable": "",
+      "car": "",
       "default": [
         "",
         "",

@@ -150,12 +150,18 @@ tooltip label {
 #mode,
 #power-profiles-daemon,
 #privacy,
-#pulseaudio,
-#pulseaudio-slider,
 #taskbar,
 #tray,
 #window,
 #wireplumber {
+  margin-right: 20px;
+}
+
+#pulseaudio,
+#pulseaudio-slider {
+  background-color: @peach;
+  color: @mantle;
+  padding: 0 10px;
   margin-right: 20px;
 }
 

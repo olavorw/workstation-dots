@@ -21,7 +21,8 @@
     "tray"
   ],
   "modules-right": [
-    "network#performance",
-    "group/performance"
+    "network",
+    "group/performance",
+    "group/audio"
   ]
 }
