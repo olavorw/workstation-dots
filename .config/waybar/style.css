@@ -1,0 +1,239 @@
+@import './themes/catppuccin-mocha.css';
+
+
+* {
+    font-family: "JetBrainsMono Nerd Font Propo";
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar.empty,
+window#waybar,
+window#waybar.empty #window {
+    color: @main-fg;
+    background-color: alpha(@main-bg, 0.9);
+}
+
+tooltip {
+  color: @main-fg;
+  background: alpha(@main-bg, 0.9);
+  border-radius: 0px;
+  border: 3px solid @teal;
+}
+tooltip label {
+  color: @main-fg;
+}
+.modules-left,
+.modules-center,
+.modules-right {
+  padding-left: 10px;
+}
+#workspaces button.active,
+#taskbar button.active {
+    color: @mantle;
+    background-color: @accent;
+    border-radius: 0px;
+}
+
+#taskbar button,
+#workspaces button {
+    color: @main-fg;
+    padding-left: 0.7em;
+    background-color: @workspaces;
+    padding-right: 0.7em;
+    /* margin-left: 0.3em; */
+    margin-right: 0.3em;
+    border-radius: 0px;
+}
+
+#window {
+  background-color: @teal;
+  color: @mantle;
+  padding: 0 10px;
+}
+
+#taskbar button:hover,
+#workspaces button:hover {
+    color: @hover-fg;
+    background-color: @hover-bg;
+}
+
+#workspaces button.empty {
+    color: @yellow;
+}
+
+#memory,
+#custom-platform-profile {
+    padding-left: 1em
+}
+
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#language,
+#network,
+#bluetooth,
+#tray {
+    padding-right: 1em 
+}
+
+#custom-launcher {
+  font-weight: 100;
+  color: @blue;
+  padding: 0 10px;
+  background-color: @crust;
+}
+
+/* MODULES */
+#backlight,
+#backlight-slider,
+#battery,
+#bluetooth,
+#custom-acrylicctl,
+#custom-backlight,
+#custom-browser,
+#custom-cava_mviz,
+#custom-cycle_wall,
+#custom-dot_update,
+#custom-file_manager,
+#custom-hint,
+#custom-hypridle,
+#custom-keybinds,
+#custom-keyboard,
+#custom-media,
+#custom-hyprmenu,
+#custom-playerctl,
+#custom-power,
+#custom-power_vertical,
+#custom-quit,
+#custom-reboot,
+#custom-settings,
+#custom-spotify,
+#custom-tty,
+#custom-updater,
+#custom-protonvpn,
+#custom-waybar,
+#custom-weather,
+#custom-weather.clearNight,
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight,
+#custom-weather.default,
+#custom-weather.rainyDay,
+#custom-weather.rainyNight,
+#custom-weather.severe,
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight,
+#custom-weather.sunnyDay,
+#custom-yubilock,
+#idle_inhibitor,
+#keyboard-state,
+#mode,
+#power-profiles-daemon,
+#privacy,
+#pulseaudio,
+#pulseaudio-slider,
+#taskbar,
+#tray,
+#window,
+#wireplumber {
+  margin-right: 20px;
+}
+
+#mpris {
+  padding: 0 20px;
+  color: @red;
+  background-color: @rosewater;
+  margin: 0 20px;
+}
+
+/* performance_drawer */
+#cpu {
+  color: @mantle;
+  background-color: @teal;
+  margin-right: 10px;
+  padding: 0 3px 0 3px;
+}
+
+#memory {
+  color: @mantle;
+  background-color: @blue;
+  margin-right: 10px;
+  padding: 0 3px 0 3px;
+}
+
+#disk {
+  color: @mantle;
+  background-color: @yellow;
+  margin-right: 10px;
+  padding: 0 3px 0 3px;
+}
+
+#temperature {
+  color: @mantle;
+  background-color: @peach;
+  margin-right: 10px;
+  padding: 0 3px 0 3px;
+}
+
+ /* ===== SEPARATORS ===== */
+#custom-separator.dot-line,
+#custom-separator.dot,
+#custom-separator.line,
+#custom-separator.blank,
+#custom-separator.blank_2,
+#custom-separator.blank_3,
+#custom-arrow1,
+#custom-arrow2 {
+  margin: 0 4px;
+}
+
+/* ===== STATE INDICATORS ===== */
+#custom-hypridle.notactive,
+#idle_inhibitor.activated {
+  color: #39ff14;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+#temperature.critical {
+  color: @critical;
+}
+
+#battery.critical:not(.charging) {
+  color: @critical;
+}
+
+/* ===== SLIDER STYLES ===== */
+#backlight-slider slider,
+#pulseaudio-slider slider {
+  min-width: 0px;
+  min-height: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+  min-width: 80px;
+  min-height: 5px;
+  border-radius: 5px;
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+  min-height: 10px;
+  border-radius: 5px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes blink {
+  to {
+    color: #000000;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "include": [
+    "$HOME/.config/waybar/modules/workspaces.jsonc",
+    "$HOME/.config/waybar/modules/separators.jsonc",
+    "$HOME/.config/waybar/modules/modules.jsonc",
+    "$HOME/.config/waybar/modules/groups.jsonc",
+    "$HOME/.config/waybar/modules/custom-modules.jsonc"
+  ],
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "spacing": 5,
+  "modules-left": [
+    "group/arch_drawer",
+    "hyprland/workspaces#rw",
+    "mpris"
+  ],
+  "modules-center": [
+    "hyprland/window",
+    "clock",
+    "tray"
+  ],
+  "modules-right": [
+    "group/performance"
+  ]
+}
